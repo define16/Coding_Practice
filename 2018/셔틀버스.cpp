@@ -35,7 +35,7 @@ vector<int> casting_int(vector<string> timetable) {
 		int time = hour * 60 + min;
 
 		timetable_min.push_back(time);
-		
+
 	}
 	return timetable_min;
 }
@@ -48,35 +48,35 @@ string solution(int n, int t, int m, vector<string> timetable) {
 	int bus_time = 540;
 	int get_on = 0;
 	int seat = 0;
-	// 1. ½Ã°£¼øÀ¸·Î Á¤·Ä
+	// 1. ì •ë ¬
 	sort(timetable.begin(), timetable.end());
 	timetable_min = casting_int(timetable);
-	
-	//9½Ã Á¦¿Ü
+
+	//2. ë²„ìŠ¤ íƒ‘ìŠ¹ì‹œìž‘
 	for (int i = 0; i < n; i++) {
 		seat = m;
 
 		int j = 0;
-		// 2. ¹ö½º¿¡ »ç¶÷ÅÂ¿ì±â
+		// 3. ì•ž ë²„ìŠ¤ê°€ ì™”ì„ë•Œ íƒ€ëŠ” ì‚¬ëžŒìˆ˜
 		while (j < timetable_min.size()) {
 			if (timetable_min[j] <= bus_time) {
-				seat--; // ÁÂ¼®¼ö
-				get_on++; // ¹ö½º¸¦ Å¾½ÂÇÑ »ç¶÷¼ö
+				seat--; // ì¢Œì„ìˆ˜
+				get_on++; // ë²„ìŠ¤ íƒ‘ìŠ¹ìž
 				if (seat == 0) break;
 			}
 			j++;
 		}
 		//cout << i << endl;
-		//cout << bus_time << "ºÐ¿¡ ¹ö½º Åº »ç¶÷ ¼ö : " << get_on << endl;
-		//¸¶Áö¸· Â÷ 
+		//cout << bus_time << "ë²„ìŠ¤ íƒ‘ìŠ¹í•œ ì‚¬ëžŒ ìˆ˜  : " << get_on << endl;
+		//ë§ˆì§€ë§‰ ë²„ìŠ¤ íƒ‘ìŠ¹
 		if (i == n - 1) {
-			if (seat == 0) 
+			if (seat == 0)
 					answer_temp = timetable_min[get_on - 1] - 1;
 			else if(seat > 0)
 				answer_temp = bus_time;
 			break;
 		}
-		
+
 		bus_time += t;
 		if (bus_time > 24 * 60 - 1) {
 			answer_temp = bus_time - t;
@@ -94,7 +94,7 @@ int main() {
 	int t = 60;
 	int m = 45;
 	vector<string> timetable;
-	//"23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59" 
+	//"23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59"
 	string temp[] = { "09:10", "09:09", "08:00"};
 
 	for (int i = 0; i < 3; i++) {

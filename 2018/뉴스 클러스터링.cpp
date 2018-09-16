@@ -62,7 +62,7 @@ int solution1(string str1, string str2) {
 
 
 
-	cout << "±³ÁýÇÕ : " << intersection_cnt << " ÇÕÁýÇÕ : " << (sum_cnt - intersection_cnt) << endl;
+	cout << "êµì§‘í•© : " << intersection_cnt << " í•©ì§‘í•© : " << (sum_cnt - intersection_cnt) << endl;
 
 
 	if (intersection_cnt > 0 && sum_cnt > 0) {
@@ -70,7 +70,7 @@ int solution1(string str1, string str2) {
 		if (answer < 1)
 			return 65536;
 	}
-		
+
 
 
 	return answer;

@@ -12,8 +12,8 @@ int solution(vector<vector<string>> clothes) {
 	for (int i = 0; i < clothes.size(); i++)
 		attributes[clothes[i][1]]++;
 	for (auto it = attributes.begin(); it != attributes.end(); it++) {
-		cout << it->second << endl; // 두번째 값 접근 (int)
-		cout << it->first << endl;; // 첫번째 값 접근 (string)
+		cout << it->second << endl; // (int)
+		cout << it->first << endl;; // (string)
 		answer *= (it->second + 1);
 	}
 	answer--;

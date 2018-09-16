@@ -19,6 +19,7 @@ public:
 		this->cnt = cnt;
 	}
 
+// 블록이 없어질때 2*2
 	vector<string> removeBlock(int m, int n, vector<string> board, vector<string> board_pos) {
 		int cnt = 0;
 		for (int i = 0; i<m - 1; i++) {
@@ -35,7 +36,7 @@ public:
 		setCnt(cnt);
 		return board_pos;
 	}
-
+	//블록이 위에 내려올때 
 	vector<string> resetBlock(int m, int n, vector<string> board, vector<string> board_pos) {
 
 		for (int i = 0; i < board_pos.size();i++) {
