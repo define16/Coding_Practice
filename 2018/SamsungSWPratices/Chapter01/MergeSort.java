@@ -2,51 +2,51 @@ package SamsungSWPratices.Chapter01;
 
 public class MergeSort {
 	int[] tempArray;
-	
+
 	public MergeSort(int size) {
 		tempArray = new int[size];
 	}
-	
+
 	public int[] getTempArray() {
 		return tempArray;
 	}
-	// ºÐÇÒ ÇÔ¼ö
+	// ë¶„í•  í•¨ìˆ˜
 	public int[] merge_division(int[] array, int left, int right) {
-		int middle; // Áß°£
-		
+		int middle; // ì¤‘ê°„
+
 		if (left < right) {
 			middle = (left + right) / 2;
 			array= merge_division(array, left, middle);
 			array= merge_division(array, middle+1, right);
-			array =merge(array, left, middle, right);			
+			array =merge(array, left, middle, right);
 		}
-		
+
 		return array;
 	}
-	
-	// º´ÇÕ ÇÔ¼ö
+
+	// ë³‘í•© í•¨ìˆ˜
 	public int[] merge(int[] array, int left, int middle ,int right) {
 		int left_, middle_, idx;
 
 		left_ = left;
 		middle_ = middle+1;
-		idx = left; // tempArrayÀÇ ÀÎµ¦½º
-		
-		// leftºÎÅÍ middle±îÁöÀÇ ºí·Ï°ú middle+1ºÎÅÍ right±îÁöÀÇ ºí·ÏÀ» ¼­·Îºñ±³ÇÏ´Â ºÎºÐ
+		idx = left; // tempArrayì˜ ì¸ë±ìŠ¤
+
+		// leftë¶€í„° middleê¹Œì§€ì˜ ë¸”ë¡ê³¼ middle+1ë¶€í„° rightê¹Œì§€ì˜ ë¸”ë¡ì„ ì„œë¡œë¹„êµí•˜ëŠ” ë¶€ë¶„
 		while(left_ <= middle && middle_ <= right) {
 			if(array[left_] <= array[middle_]) {
 				tempArray[idx] = array[left_];
 				System.out.println(" tempArray[idx] : " + tempArray[idx]);
 				System.out.println(" array[left_] : " + array[left_]);
-				left_++;				
+				left_++;
 			}else {
 				tempArray[idx] = array[middle_];
 				middle_++;
 			}
 			idx++;
 		}
-		// left ºí·ÏÀÇ °ªÀº ´Ù Ã³¸®µÇ¾ú´Âµ¥ right ºí·ÏÀÇ index°¡ ¾ÆÁ÷ ³²¾ÆÀÖÀ» °æ¿ì 
-		// right index¸¦ ¼øÂ÷ÀûÀ¸·Î °á°ú result¿¡ º¹»ç
+		// left ë¸”ë¡ì˜ ê°’ì€ ë‹¤ ì²˜ë¦¬ë˜ì—ˆëŠ”ë° right ë¸”ë¡ì˜ indexê°€ ì•„ì§ ë‚¨ì•„ìžˆì„ ê²½ìš°
+		// right indexë¥¼ ìˆœì°¨ì ìœ¼ë¡œ ê²°ê³¼ resultì— ë³µì‚¬
 		if(left_ > middle) {
 			for(int i = middle_; i <= right; i++) {
 				tempArray[idx] = array[i];
@@ -64,22 +64,21 @@ public class MergeSort {
 		}
 		return array;
 	}
-	
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int num = 16;
 		int[] input = {100, 99, 98, 97, 94, 95,96, 93, 92, 91, 90, 89, 88, 87, 86, 85};
 		int[] answer = new int[num];
 		MergeSort mergeSort = new MergeSort(num);
-		
+
 		answer = mergeSort.merge_division(input, 0, num-1);
-		
+
 		for(int i = 0; i < input.length;i++) {
 			System.out.println(answer[i]);
 
 		}
-		
+
 	}
 
 }
-
