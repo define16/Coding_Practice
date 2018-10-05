@@ -13,7 +13,7 @@ public class MergeSort {
 	// 분할 함수
 	public int[] merge_division(int[] array, int left, int right) {
 		int middle; // 중간
-
+		
 		if (left < right) {
 			middle = (left + right) / 2;
 			array= merge_division(array, left, middle);
@@ -65,6 +65,7 @@ public class MergeSort {
 		return array;
 	}
 
+	//한글테스트
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int num = 16;
