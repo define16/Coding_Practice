@@ -1,88 +1,66 @@
 package SamsungSWPratices.Chapter01;
 
-public class MergeSort {
-	int[] tempArray;
+public class QuickSort {
 
-	public MergeSort(int size) {
-		tempArray = new int[size];
-	}
+	public int[] sort(int[] array, int left, int right) {
+		int left_temp = left;
+		int right_temp = right;
+		int pivot = array[(left + right)/2];
 
-	public int[] getTempArray() {
-		return tempArray;
-	}
-	// 분할 함수
-	public int[] merge_division(int[] array, int left, int right) {
-		int middle; // 중간
+		do {
+			// 왼쪽부터 시작, pivot보다 큰 값의 인덱스 찾기
+			while(array[left_temp] < pivot)
+				left_temp++;
+			// 오른쪽부터 시작, pivot보다 작은 값의 인덱스 찾기
+			while(array[right_temp] > pivot)
+				right_temp--;
 
-		if (left < right) {
-			middle = (left + right) / 2;
-			array = merge_division(array, left, middle);
-			array = merge_division(array, middle+1, right);
-			array = merge(array, left, middle, right);
-		}
+			// 만약 pivot보다 큰 값이 pivot기준으로 왼쪽, pivot보다 작은 값이 pivot기준으로 오른쪽에 있다면 자리를 바꿔주기
+			if(left_temp <= right_temp) {
+				if(array[left_temp] != array[right_temp]) {
+					array[left_temp] = array[left_temp]^array[right_temp];
+					array[right_temp] = array[left_temp]^array[right_temp];
+					array[left_temp] = array[left_temp]^array[right_temp];
+				}
+				left_temp++;
+				right_temp--;
+			}
+		}while(left_temp <= right_temp);
+		// left_temp와 right_temp가 같다는 의미는 pivot위치라는 의미
+		// pivot위치에 도달시 종료
+
+		// left_temp와 right_temp가 배열의 끝에 도달하지 못할 경우 재귀함수로 재 탐색
+		if(left < right_temp)
+			array = sort(array, left, right_temp);
+		if(right > left_temp)
+			array = sort(array, left_temp, right);
 
 		return array;
 	}
 
-	// 병합 함수
-	public int[] merge(int[] array, int left, int middle ,int right) {
-		int left_, middle_, idx;
-
-		left_ = left;
-		middle_ = middle+1;
-		idx = left; // tempArray의 인덱스
-
-		// left부터 middle까지의 블록과 middle+1부터 right까지의 블록을 서로비교하는 부분
-		while(left_ <= middle && middle_ <= right) {
-			if(array[left_] <= array[middle_]) {
-				tempArray[idx] = array[left_];
-				left_++;
-			}else {		 
-				tempArray[idx] = array[middle_];			
-				middle_++;
-			}
-			idx++;
-		}
-		
-		// left 블록의 값은 다 처리되었는데 right 블록의 index가 아직 남아있을 경우
-		// right index를 순차적으로 결과 result에 복사
-		if(left_ > middle) {
-			for(int i = middle_; i <= right; i++) {
-				tempArray[idx] = array[i];
-				idx++;
-			}
-		}else {
-			for(int i = left; i <= middle; i++) {
-				tempArray[idx] = array[i];
-				idx++;
-			}
-		}
-		
-		for(int i = left; i <= right; i++)
-			array[i] = tempArray[i];
-		
-		return array;
-	}
-
-	//한글테스트
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int num = 16;
-		int[] input = {100, 99, 98, 97, 94, 95,96, 93, 92, 91, 90, 89, 88, 87, 86, 85};
-		int[] answer = new int[num];
-		MergeSort mergeSort = new MergeSort(num);
+		int input1[] = {485, 241, 454, 325, 452, 685, 498, 890, 281, 121};
+		int input2[] = {486, 242, 454, 325, 453, 685, 499, 891, 282, 122};
+		int anwer1[] = new int[input1.length];
+		int anwer2[] = new int[input2.length];
+		QuickSort quickSort = new QuickSort();
 
-		answer = mergeSort.merge_division(input, 0, num-1);
+		anwer1 = quickSort.sort(input1, 0, input1.length-1);
+		anwer2 = quickSort.sort(input2, 0, input2.length-1);
 
-		for(int i = 0; i < num;i++) {
-
-			if (i == num-1) {
-				System.out.print(answer[i]);
-			}else {
-				System.out.print(answer[i] + " ");
-			}
+		for(int i = 0; i< anwer1.length; i++) {
+			if(i == anwer1.length-1)
+				System.out.println(anwer1[i]);
+			else
+				System.out.print(anwer1[i] + " ");
 		}
-
+		for(int i = 0; i< anwer2.length; i++) {
+			if(i == anwer2.length-1)
+				System.out.println(anwer2[i]);
+			else
+				System.out.print(anwer2[i] + " ");
+		}
 
 	}
 

@@ -4,65 +4,76 @@ public class QuickSort {
 
 	public int[] sort(int[] array, int left, int right) {
 		int left_temp = left;
-		int right_temp = right; 
+		int right_temp = right;
 		int pivot = array[(left + right)/2];
-		
+
 		do {
-			// ¿ŞÂÊºÎÅÍ ½ÃÀÛ, pivotº¸´Ù Å« °ªÀÇ ÀÎµ¦½º Ã£±â
+			// ì™¼ìª½ë¶€í„° ì‹œì‘, pivotë³´ë‹¤ í° ê°’ì˜ ì¸ë±ìŠ¤ ì°¾ê¸°
 			while(array[left_temp] < pivot)
 				left_temp++;
-			// ¿À¸¥ÂÊºÎÅÍ ½ÃÀÛ, pivotº¸´Ù ÀÛÀº °ªÀÇ ÀÎµ¦½º Ã£±â
+			// ì˜¤ë¥¸ìª½ë¶€í„° ì‹œì‘, pivotë³´ë‹¤ ì‘ì€ ê°’ì˜ ì¸ë±ìŠ¤ ì°¾ê¸°
 			while(array[right_temp] > pivot)
 				right_temp--;
-			
-			// ¸¸¾à pivotº¸´Ù Å« °ªÀÌ pivot±âÁØÀ¸·Î ¿ŞÂÊ, pivotº¸´Ù ÀÛÀº °ªÀÌ pivot±âÁØÀ¸·Î ¿À¸¥ÂÊ¿¡ ÀÖ´Ù¸é ÀÚ¸®¸¦ ¹Ù²ãÁÖ±â
+
+			// ë§Œì•½ pivotë³´ë‹¤ í° ê°’ì´ pivotê¸°ì¤€ìœ¼ë¡œ ì™¼ìª½, pivotë³´ë‹¤ ì‘ì€ ê°’ì´ pivotê¸°ì¤€ìœ¼ë¡œ ì˜¤ë¥¸ìª½ì— ìˆë‹¤ë©´ ìë¦¬ë¥¼ ë°”ê¿”ì£¼ê¸°
 			if(left_temp <= right_temp) {
 				if(array[left_temp] != array[right_temp]) {
-					System.out.println("?");
 					array[left_temp] = array[left_temp]^array[right_temp];
 					array[right_temp] = array[left_temp]^array[right_temp];
 					array[left_temp] = array[left_temp]^array[right_temp];
-					left_temp++;
-					right_temp--;
 				}
+				left_temp++;
+				right_temp--;
 			}
-		}while(left_temp <= right_temp); 
-		// left_temp¿Í right_temp°¡ °°´Ù´Â ÀÇ¹Ì´Â pivotÀ§Ä¡¶ó´Â ÀÇ¹Ì
-		// pivotÀ§Ä¡¿¡ µµ´Ş½Ã Á¾·á
-		
-		// left_temp¿Í right_temp°¡ ¹è¿­ÀÇ ³¡¿¡ µµ´ŞÇÏÁö ¸øÇÒ °æ¿ì Àç±ÍÇÔ¼ö·Î Àç Å½»ö
-		if(left < right_temp) 
+		}while(left_temp <= right_temp);
+		// left_tempì™€ right_tempê°€ ê°™ë‹¤ëŠ” ì˜ë¯¸ëŠ” pivotìœ„ì¹˜ë¼ëŠ” ì˜ë¯¸
+		// pivotìœ„ì¹˜ì— ë„ë‹¬ì‹œ ì¢…ë£Œ
+
+		// left_tempì™€ right_tempê°€ ë°°ì—´ì˜ ëì— ë„ë‹¬í•˜ì§€ ëª»í•  ê²½ìš° ì¬ê·€í•¨ìˆ˜ë¡œ ì¬ íƒìƒ‰
+		if(left < right_temp)
 			array = sort(array, left, right_temp);
 		if(right > left_temp)
 			array = sort(array, left_temp, right);
-		
+
 		return array;
 	}
-	
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int input1[] = {485, 241, 454, 325, 452, 685, 498, 890, 281, 121};
-		int input2[] = {486, 242, 454, 325, 453, 685, 499, 891, 282, 122};
-		int anwer1[] = new int[input1.length];
-		int anwer2[] = new int[input2.length];
+		int input2[] = {486, 242, 454, 325, 453, 685, 280, 891, 282, 122};
+		int answer = 0;
+		int answer1[] = new int[input1.length];
+		int answer2[] = new int[input2.length];
 		QuickSort quickSort = new QuickSort();
-		
-		anwer1 = quickSort.sort(input1, 0, input1.length-1);
-		anwer2 = quickSort.sort(input2, 0, input2.length-1);
-		
-		for(int i = 0; i< anwer1.length; i++) {
-			if(i == anwer1.length-1)
-				System.out.println(anwer1[i]);
+
+		answer1 = quickSort.sort(input1, 0, input1.length-1);
+		answer2 = quickSort.sort(input2, 0, input2.length-1);
+
+		for(int i = 0; i< answer1.length; i++) {
+			if(i == answer1.length-1)
+				System.out.println(answer1[i]);
 			else
-				System.out.print(anwer1[i] + " ");
+				System.out.print(answer1[i] + " ");
 		}
-		for(int i = 0; i< anwer2.length; i++) {
-			if(i == anwer2.length-1)
-				System.out.println(anwer2[i]);
+		for(int i = 0; i< answer2.length; i++) {
+			if(i == answer2.length-1)
+				System.out.println(answer2[i]);
 			else
-				System.out.print(anwer2[i] + " ");
+				System.out.print(answer2[i] + " ");
 		}
-		
+
+		for(int i = 0; i < answer1.length-1; i++) {
+			for(int j = i; j < answer2.length;j++) {
+				if(answer1[i] < answer2[j])
+					break;
+				else if(answer1[i] == answer2[j])
+					answer++;
+
+			}
+		}
+		System.out.println(answer);
+
 	}
 
 }
