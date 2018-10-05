@@ -13,12 +13,12 @@ public class MergeSort {
 	// 분할 함수
 	public int[] merge_division(int[] array, int left, int right) {
 		int middle; // 중간
-		
+
 		if (left < right) {
 			middle = (left + right) / 2;
-			array= merge_division(array, left, middle);
-			array= merge_division(array, middle+1, right);
-			array =merge(array, left, middle, right);
+			array = merge_division(array, left, middle);
+			array = merge_division(array, middle+1, right);
+			array = merge(array, left, middle, right);
 		}
 
 		return array;
@@ -36,15 +36,14 @@ public class MergeSort {
 		while(left_ <= middle && middle_ <= right) {
 			if(array[left_] <= array[middle_]) {
 				tempArray[idx] = array[left_];
-				System.out.println(" tempArray[idx] : " + tempArray[idx]);
-				System.out.println(" array[left_] : " + array[left_]);
 				left_++;
-			}else {
-				tempArray[idx] = array[middle_];
+			}else {		 
+				tempArray[idx] = array[middle_];			
 				middle_++;
 			}
 			idx++;
 		}
+		
 		// left 블록의 값은 다 처리되었는데 right 블록의 index가 아직 남아있을 경우
 		// right index를 순차적으로 결과 result에 복사
 		if(left_ > middle) {
@@ -53,15 +52,15 @@ public class MergeSort {
 				idx++;
 			}
 		}else {
-			for(int i = middle_; i <= right; i++) {
+			for(int i = left; i <= middle; i++) {
 				tempArray[idx] = array[i];
 				idx++;
 			}
 		}
-		for(int i = 0; i < array.length;i++) {
+		
+		for(int i = left; i <= right; i++)
 			array[i] = tempArray[i];
-			System.out.println(array[i]);
-		}
+		
 		return array;
 	}
 
@@ -75,10 +74,15 @@ public class MergeSort {
 
 		answer = mergeSort.merge_division(input, 0, num-1);
 
-		for(int i = 0; i < input.length;i++) {
-			System.out.println(answer[i]);
+		for(int i = 0; i < num;i++) {
 
+			if (i == num-1) {
+				System.out.print(answer[i]);
+			}else {
+				System.out.print(answer[i] + " ");
+			}
 		}
+
 
 	}
 
