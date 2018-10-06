@@ -1,66 +1,89 @@
 package SamsungSWPratices.Chapter01;
 
-public class QuickSort {
+public class MergeSort {
+	int[] tempArray;
 
-	public int[] sort(int[] array, int left, int right) {
-		int left_temp = left;
-		int right_temp = right;
-		int pivot = array[(left + right)/2];
+	public MergeSort(int size) {
+		tempArray = new int[size];
+	}
 
-		do {
-			// ì™¼ìª½ë¶€í„° ì‹œì‘, pivotë³´ë‹¤ í° ê°’ì˜ ì¸ë±ìŠ¤ ì°¾ê¸°
-			while(array[left_temp] < pivot)
-				left_temp++;
-			// ì˜¤ë¥¸ìª½ë¶€í„° ì‹œì‘, pivotë³´ë‹¤ ì‘ì€ ê°’ì˜ ì¸ë±ìŠ¤ ì°¾ê¸°
-			while(array[right_temp] > pivot)
-				right_temp--;
+	public int[] getTempArray() {
+		return tempArray;
+	}
+	
+	// ºĞÇÒ ÇÔ¼ö
+	public int[] merge_division(int[] array, int left, int right) {
+		int middle; // Áß°£
 
-			// ë§Œì•½ pivotë³´ë‹¤ í° ê°’ì´ pivotê¸°ì¤€ìœ¼ë¡œ ì™¼ìª½, pivotë³´ë‹¤ ì‘ì€ ê°’ì´ pivotê¸°ì¤€ìœ¼ë¡œ ì˜¤ë¥¸ìª½ì— ìˆë‹¤ë©´ ìë¦¬ë¥¼ ë°”ê¿”ì£¼ê¸°
-			if(left_temp <= right_temp) {
-				if(array[left_temp] != array[right_temp]) {
-					array[left_temp] = array[left_temp]^array[right_temp];
-					array[right_temp] = array[left_temp]^array[right_temp];
-					array[left_temp] = array[left_temp]^array[right_temp];
-				}
-				left_temp++;
-				right_temp--;
-			}
-		}while(left_temp <= right_temp);
-		// left_tempì™€ right_tempê°€ ê°™ë‹¤ëŠ” ì˜ë¯¸ëŠ” pivotìœ„ì¹˜ë¼ëŠ” ì˜ë¯¸
-		// pivotìœ„ì¹˜ì— ë„ë‹¬ì‹œ ì¢…ë£Œ
-
-		// left_tempì™€ right_tempê°€ ë°°ì—´ì˜ ëì— ë„ë‹¬í•˜ì§€ ëª»í•  ê²½ìš° ì¬ê·€í•¨ìˆ˜ë¡œ ì¬ íƒìƒ‰
-		if(left < right_temp)
-			array = sort(array, left, right_temp);
-		if(right > left_temp)
-			array = sort(array, left_temp, right);
+		if (left < right) {
+			middle = (left + right) / 2;
+			array = merge_division(array, left, middle);
+			array = merge_division(array, middle+1, right);
+			array = merge(array, left, middle, right);
+		}
 
 		return array;
 	}
 
+	// º´ÇÕ ÇÔ¼ö
+	public int[] merge(int[] array, int left, int middle ,int right) {
+		int left_, middle_, idx;
+
+		left_ = left;
+		middle_ = middle+1;
+		idx = left; // tempArrayÀÇ ÀÎµ¦½º
+
+		// leftºÎÅÍ middle±îÁöÀÇ ºí·Ï°ú middle+1ºÎÅÍ right±îÁöÀÇ ºí·ÏÀ» ¼­·Îºñ±³ÇÏ´Â ºÎºĞ
+		while(left_ <= middle && middle_ <= right) {
+			if(array[left_] <= array[middle_]) {
+				tempArray[idx] = array[left_];
+				left_++;
+			}else {		 
+				tempArray[idx] = array[middle_];			
+				middle_++;
+			}
+			idx++;
+		}
+		
+		// left ºí·ÏÀÇ °ªÀº ´Ù Ã³¸®µÇ¾ú´Âµ¥ right ºí·ÏÀÇ index°¡ ¾ÆÁ÷ ³²¾ÆÀÖÀ» °æ¿ì
+		// right index¸¦ ¼øÂ÷ÀûÀ¸·Î °á°ú result¿¡ º¹»ç
+		if(left_ > middle) {
+			for(int i = middle_; i <= right; i++) {
+				tempArray[idx] = array[i];
+				idx++;
+			}
+		}else {
+			for(int i = left; i <= middle; i++) {
+				tempArray[idx] = array[i];
+				idx++;
+			}
+		}
+		
+		for(int i = left; i <= right; i++)
+			array[i] = tempArray[i];
+		
+		return array;
+	}
+
+	//ÇÑ±ÛÅ×½ºÆ®
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int input1[] = {485, 241, 454, 325, 452, 685, 498, 890, 281, 121};
-		int input2[] = {486, 242, 454, 325, 453, 685, 499, 891, 282, 122};
-		int anwer1[] = new int[input1.length];
-		int anwer2[] = new int[input2.length];
-		QuickSort quickSort = new QuickSort();
+		int num = 16;
+		int[] input = {100, 99, 98, 97, 94, 95,96, 93, 92, 91, 90, 89, 88, 87, 86, 85};
+		int[] answer = new int[num];
+		MergeSort mergeSort = new MergeSort(num);
 
-		anwer1 = quickSort.sort(input1, 0, input1.length-1);
-		anwer2 = quickSort.sort(input2, 0, input2.length-1);
+		answer = mergeSort.merge_division(input, 0, num-1);
 
-		for(int i = 0; i< anwer1.length; i++) {
-			if(i == anwer1.length-1)
-				System.out.println(anwer1[i]);
-			else
-				System.out.print(anwer1[i] + " ");
+		for(int i = 0; i < num;i++) {
+
+			if (i == num-1) {
+				System.out.print(answer[i]);
+			}else {
+				System.out.print(answer[i] + " ");
+			}
 		}
-		for(int i = 0; i< anwer2.length; i++) {
-			if(i == anwer2.length-1)
-				System.out.println(anwer2[i]);
-			else
-				System.out.print(anwer2[i] + " ");
-		}
+
 
 	}
 

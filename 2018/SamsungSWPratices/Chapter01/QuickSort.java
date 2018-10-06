@@ -8,14 +8,14 @@ public class QuickSort {
 		int pivot = array[(left + right)/2];
 
 		do {
-			// ì™¼ìª½ë¶€í„° ì‹œì‘, pivotë³´ë‹¤ í° ê°’ì˜ ì¸ë±ìŠ¤ ì°¾ê¸°
+			// ¿ŞÂÊºÎÅÍ ½ÃÀÛ, pivotº¸´Ù Å« °ªÀÇ ÀÎµ¦½º Ã£±â
 			while(array[left_temp] < pivot)
 				left_temp++;
-			// ì˜¤ë¥¸ìª½ë¶€í„° ì‹œì‘, pivotë³´ë‹¤ ì‘ì€ ê°’ì˜ ì¸ë±ìŠ¤ ì°¾ê¸°
+			// ¿À¸¥ÂÊºÎÅÍ ½ÃÀÛ, pivotº¸´Ù ÀÛÀº °ªÀÇ ÀÎµ¦½º Ã£±â
 			while(array[right_temp] > pivot)
 				right_temp--;
 
-			// ë§Œì•½ pivotë³´ë‹¤ í° ê°’ì´ pivotê¸°ì¤€ìœ¼ë¡œ ì™¼ìª½, pivotë³´ë‹¤ ì‘ì€ ê°’ì´ pivotê¸°ì¤€ìœ¼ë¡œ ì˜¤ë¥¸ìª½ì— ìˆë‹¤ë©´ ìë¦¬ë¥¼ ë°”ê¿”ì£¼ê¸°
+			// ¸¸¾à pivotº¸´Ù Å« °ªÀÌ pivot±âÁØÀ¸·Î ¿ŞÂÊ, pivotº¸´Ù ÀÛÀº °ªÀÌ pivot±âÁØÀ¸·Î ¿À¸¥ÂÊ¿¡ ÀÖ´Ù¸é ÀÚ¸®¸¦ ¹Ù²ãÁÖ±â
 			if(left_temp <= right_temp) {
 				if(array[left_temp] != array[right_temp]) {
 					array[left_temp] = array[left_temp]^array[right_temp];
@@ -26,10 +26,10 @@ public class QuickSort {
 				right_temp--;
 			}
 		}while(left_temp <= right_temp);
-		// left_tempì™€ right_tempê°€ ê°™ë‹¤ëŠ” ì˜ë¯¸ëŠ” pivotìœ„ì¹˜ë¼ëŠ” ì˜ë¯¸
-		// pivotìœ„ì¹˜ì— ë„ë‹¬ì‹œ ì¢…ë£Œ
+		// left_temp¿Í right_temp°¡ °°´Ù´Â ÀÇ¹Ì´Â pivotÀ§Ä¡¶ó´Â ÀÇ¹Ì
+		// pivotÀ§Ä¡¿¡ µµ´Ş½Ã Á¾·á
 
-		// left_tempì™€ right_tempê°€ ë°°ì—´ì˜ ëì— ë„ë‹¬í•˜ì§€ ëª»í•  ê²½ìš° ì¬ê·€í•¨ìˆ˜ë¡œ ì¬ íƒìƒ‰
+		// left_temp¿Í right_temp°¡ ¹è¿­ÀÇ ³¡¿¡ µµ´ŞÇÏÁö ¸øÇÒ °æ¿ì Àç±ÍÇÔ¼ö·Î Àç Å½»ö
 		if(left < right_temp)
 			array = sort(array, left, right_temp);
 		if(right > left_temp)
@@ -62,18 +62,18 @@ public class QuickSort {
 			else
 				System.out.print(answer2[i] + " ");
 		}
-
+		
 		for(int i = 0; i < answer1.length-1; i++) {
 			for(int j = i; j < answer2.length;j++) {
-				if(answer1[i] < answer2[j])
+				if(answer1[i] < answer2[j]) 
 					break;
-				else if(answer1[i] == answer2[j])
+				else if(answer1[i] == answer2[j]) 
 					answer++;
-
+				
 			}
 		}
-		System.out.println(answer);
-
+		System.out.println(answer);	
+	
 	}
 
 }
