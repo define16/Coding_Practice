@@ -10,7 +10,7 @@ public class MergeSort {
 	public int[] getTempArray() {
 		return tempArray;
 	}
-	
+
 	// 분할 함수
 	public int[] merge_division(int[] array, int left, int right) {
 		int middle; // 중간
@@ -38,13 +38,13 @@ public class MergeSort {
 			if(array[left_] <= array[middle_]) {
 				tempArray[idx] = array[left_];
 				left_++;
-			}else {		 
-				tempArray[idx] = array[middle_];			
+			}else {
+				tempArray[idx] = array[middle_];
 				middle_++;
 			}
 			idx++;
 		}
-		
+
 		// left 블록의 값은 다 처리되었는데 right 블록의 index가 아직 남아있을 경우
 		// right index를 순차적으로 결과 result에 복사
 		if(left_ > middle) {
@@ -58,10 +58,10 @@ public class MergeSort {
 				idx++;
 			}
 		}
-		
+
 		for(int i = left; i <= right; i++)
 			array[i] = tempArray[i];
-		
+
 		return array;
 	}
 

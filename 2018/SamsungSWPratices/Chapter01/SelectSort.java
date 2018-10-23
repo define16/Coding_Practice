@@ -10,7 +10,7 @@ public class SelectSort {
 		b = a^b;
 		a = a^b;
 	}
-	
+
 	public int[] sort(int[] input) {
 		int min;
 		for(int i = 0; i<input.length-1;i++) {
@@ -20,18 +20,18 @@ public class SelectSort {
 					min = j;
 				}
 			}
-			
+
 			if(input[i] != input[min]) {
 				input[i] = input[min]^input[i];
 				input[min] = input[min]^input[i];
 				input[i] = input[min]^input[i];
 			}
-			
+
 		}
-				
+
 		return input;
 	}
-	
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int[] input = {41, 31, 48, 97, 9, 65, 27,29, 13, 15};
@@ -39,9 +39,9 @@ public class SelectSort {
 		String[] grade = {"F","D","D+" ,"C","C+","B","B+","A","A+","A+"};
 		HashMap<Integer, String> map = new HashMap<Integer, String>();
 		SelectSort selectSort = new SelectSort();
-		
+
 		input = selectSort.sort(input); // 선택정렬
-		
+
 		for(int i = 0; i<input.length;i++) {
 			System.out.print(input[i] + " ");
 			map.put(input[i], grade[i]);
@@ -57,8 +57,8 @@ public class SelectSort {
 			}
 
 		}
-				
-		
+
+
 	}
 
 }
