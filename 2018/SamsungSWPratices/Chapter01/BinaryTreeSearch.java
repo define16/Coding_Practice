@@ -30,7 +30,7 @@ public class BinaryTreeSearch {
 	    System.out.print(root.getData() + " ");
 
 	}
-
+	
 	// 찾는 원소의 인덱스를 반환하는 함수
 	public int search(Node node, int findNum , int idx) {
 		if (node == null)
@@ -39,7 +39,7 @@ public class BinaryTreeSearch {
 		if(node.getData() == findNum) {
 			isFind = true;
 			return idx;
-		}
+		}		
 		if(!isFind) {
 			idx = search(node.getLeft(),findNum ,idx);
 		    System.out.print(node.getData() + " ");
@@ -48,7 +48,7 @@ public class BinaryTreeSearch {
 		return idx;
 
 	}
-
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int size = 30;
@@ -56,7 +56,7 @@ public class BinaryTreeSearch {
 		int findNumber = 50;
 		int answer = 0;
 		isFind = false;
-
+		
 		Node tree = new Node();
 		BinaryTreeSearch binaryTreeSearch = new BinaryTreeSearch();
 		BinaryTree binaryTree = new BinaryTree();
@@ -70,7 +70,7 @@ public class BinaryTreeSearch {
 		tree = binaryTree.getBinaryTree();
 //		binaryTreeSearch.inOrder(tree);
 		answer = binaryTreeSearch.search(tree, findNumber, 0);
-
+		
 		System.out.println("answer : " + answer);
 	}
 
