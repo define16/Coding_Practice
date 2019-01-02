@@ -6,15 +6,17 @@ public class SelectSort {
 
 	public void swap(int a, int b) {
 		//비트연산자XOR로 swap 하기. 단 a와 b가 같을때는 0이 나온다. ^연산의 특징
-		a = a^b;
-		b = a^b;
-		a = a^b;
+		if(a != b) {
+			a = a^b;
+			b = a^b;
+			a = a^b;
+		}
 	}
 	
 	public int[] sort(int[] input) {
 		int min;
 		for(int i = 0; i<input.length-1;i++) {
-			min = i;
+			min = i; // 선택된 index
 			for(int j = i+1; j < input.length; j++) {
 				if(input[min] > input[j]) {
 					min = j;
