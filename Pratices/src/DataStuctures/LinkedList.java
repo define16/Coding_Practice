@@ -3,22 +3,22 @@ package DataStuctures;
  * 
  * @author define16
  * 
- * 1. Node¸¦ ±¸Çö
- * 2. addFirst, addLast, add(Áß°£) ±¸Çö
- * 3. toString(Ãâ·Â) ±¸Çö
- * 4. removeFirst, removeLast, remove(Áß°£) ±¸Çö
- * 5. size(Å©±â Ãâ·Â)
- * 6. get(¿¤¸®¸ÕÆ® Ãâ·Â) ±¸Çö
- * 7. indexOf(Å½»ö) ±¸Çö
+ * 1. Nodeë¥¼ êµ¬í˜„
+ * 2. addFirst, addLast, add(ì¤‘ê°„) êµ¬í˜„
+ * 3. toString(ì¶œë ¥) êµ¬í˜„
+ * 4. removeFirst, removeLast, remove(ì¤‘ê°„) êµ¬í˜„
+ * 5. size(í¬ê¸° ì¶œë ¥)
+ * 6. get(ì—˜ë¦¬ë¨¼íŠ¸ ì¶œë ¥) êµ¬í˜„
+ * 7. indexOf(íƒìƒ‰) êµ¬í˜„
  * 
  */
 
 public class LinkedList {
-	private Node head; // ¸Ç ¾Õ ³ëµå
-	private Node tail; // ¸Ç µÚ ³ëµå
-	private int size = 0; // Å©±â
+	private Node head; // ë§¨ ì• ë…¸ë“œ
+	private Node tail; // ë§¨ ë’¤ ë…¸ë“œ
+	private int size = 0; // í¬ê¸°
 	
-	// ³ëµå
+	// ë…¸ë“œ
 	private class Node {
 		private int data;
 		private Node link;
@@ -53,7 +53,7 @@ public class LinkedList {
 
 	}
 	
-	//ÇÙ½É1
+	//í•µì‹¬1
 	public void addFirst(int data) {
 		Node newNode = new Node(data);
 		Node temp = head;
@@ -61,12 +61,12 @@ public class LinkedList {
 		head.link = temp;
 		size++;
 		
-		// head¿Í tailÀ» ¿¬°áÇÏ´Â ºÎºĞ
+		// headì™€ tailì„ ì—°ê²°í•˜ëŠ” ë¶€ë¶„
 		if(head.link == null) {
 			tail = head;
 		}
 	}
-	//ÇÙ½É2
+	//í•µì‹¬2
 	public void addLast(int data) {
 		Node newNode = new Node(data);
 		if(size == 0) {
@@ -79,7 +79,7 @@ public class LinkedList {
 
 	}
 	
-	// index ¹øÂ° ³ëµå Ãâ·Â
+	// index ë²ˆì§¸ ë…¸ë“œ ì¶œë ¥
 	Node node(int index) {
 		Node temp = head;
 		for(int i=0; i < index; i++) {
@@ -89,13 +89,13 @@ public class LinkedList {
 		return temp;
 	}
 	
-	// Áß°£¿¡ »ğÀÔ
+	// ì¤‘ê°„ì— ì‚½ì…
 	public void add(int index, int data) {
 		if(index == 0) {
 			addFirst(data);
 		}else {
-			Node temp1 = node(index-2); // index-1¹øÂ° ³ëµå¸¦ ºÒ·¯¿Â´Ù.
-			Node temp2 = temp1.link; // index¹øÂ° ³ëµå ºÒ·¯¿Â´Ù.
+			Node temp1 = node(index-2); // index-1ë²ˆì§¸ ë…¸ë“œë¥¼ ë¶ˆëŸ¬ì˜¨ë‹¤.
+			Node temp2 = temp1.link; // indexë²ˆì§¸ ë…¸ë“œ ë¶ˆëŸ¬ì˜¨ë‹¤.
 			
 			Node newNode = new Node(data);
 			temp1.link = newNode;
@@ -106,7 +106,7 @@ public class LinkedList {
 	
 	public void removeFirst() {
 		if(size == 0) {
-			System.out.println("¿ø¼Ò°¡ ¾ø½À´Ï´Ù.");
+			System.out.println("ì›ì†Œê°€ ì—†ìŠµë‹ˆë‹¤.");
 		}else {
 			head = head.link;
 			size--;
@@ -115,7 +115,7 @@ public class LinkedList {
 	
 	public void removeLast() {
 		if(size == 0) {
-			System.out.println("¿ø¼Ò°¡ ¾ø½À´Ï´Ù.");
+			System.out.println("ì›ì†Œê°€ ì—†ìŠµë‹ˆë‹¤.");
 		}else if(size == 1) {
 			removeFirst();
 		}else {
@@ -126,7 +126,7 @@ public class LinkedList {
 	
 	public void remove(int index) {
 		if(size == 0) {
-			System.out.println("¿ø¼Ò°¡ ¾ø½À´Ï´Ù.");
+			System.out.println("ì›ì†Œê°€ ì—†ìŠµë‹ˆë‹¤.");
 		}else if(size == 1) {
 			removeFirst();
 		}else {

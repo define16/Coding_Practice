@@ -2,10 +2,10 @@ package DataStuctures;
 /**
  * 
  * @author define16
- * 0. Àü¿ª º¯¼ö - top, maxSize,stackArray
+ * 0. ì „ì—­ ë³€ìˆ˜ - top, maxSize,stackArray
  * 1. empty(), full()
  * 2. push(), pop()
- * 3. peek()(°¡ÀåÀ§¿¡ ÀÖ´Â °ª ¹İÈ¯)
+ * 3. peek()(ê°€ì¥ìœ„ì— ìˆëŠ” ê°’ ë°˜í™˜)
  *
  */
 public class ArrayStack {
@@ -63,7 +63,7 @@ public class ArrayStack {
 
 	public void push(int data) {
 		if(full()) {
-			System.out.println("²Ë Ã¡½À´Ï´Ù");
+			System.out.println("ê½‰ ì°¼ìŠµë‹ˆë‹¤");
 			maxSize += 10;
 			int[] temp = new int[maxSize];
 			for(int i = 0; i < stackArray.length; i++) {
@@ -77,7 +77,7 @@ public class ArrayStack {
 	
 	public void pop() {
 		if(empty()) {
-			System.out.println("ºñ¾î ÀÖ½À´Ï´Ù.");
+			System.out.println("ë¹„ì–´ ìˆìŠµë‹ˆë‹¤.");
 		}else {
 			stackArray[top] = 0;
 			top--;			

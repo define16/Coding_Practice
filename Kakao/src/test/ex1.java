@@ -11,7 +11,7 @@ public class ex1 {
         
         answer = ex.solution(n,m);
 
-        System.out.println("´ä : " + answer);
+        System.out.println("ë‹µ : " + answer);
 	}
 	
 	

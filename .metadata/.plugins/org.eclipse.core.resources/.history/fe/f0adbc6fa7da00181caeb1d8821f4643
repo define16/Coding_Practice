@@ -1,0 +1,16 @@
+
+public class ex2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ex2 ex = new ex2();
+		int data[] = {4,9,5,8};
+		int s1=2,s2=3,s3=4;
+		int answer =ex.solution(data,s1,s2,s3);
+		System.out.println(answer);
+	}
+	public int solution(int[] monster, int S1, int S2, int S3) {
+		int answer = -1;
+		return answer;
+	}
+}

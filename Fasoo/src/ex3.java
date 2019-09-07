@@ -15,8 +15,8 @@ public class ex3 {
 		int b = find(y);
 		
 		if (a != b) { 
-			parent[b] = a;	// y°¡ xº¸´Ù Å©¸é
-			// ´õ ÀÛÀº °ªÀ¸·Î ³Ö¾î ÁÙ ¶§ ´ÙÀ½°ú °°ÀÌµµ Ç¥Çö°¡´É
+			parent[b] = a;	// yê°€ xë³´ë‹¤ í¬ë©´
+			// ë” ì‘ì€ ê°’ìœ¼ë¡œ ë„£ì–´ ì¤„ ë•Œ ë‹¤ìŒê³¼ ê°™ì´ë„ í‘œí˜„ê°€ëŠ¥
 //			if(x < y)
 //				parent[b] = a;
 //			else
@@ -27,7 +27,7 @@ public class ex3 {
 		
 	}
 	
-	// °°Àº ºÎ¸ğ¸¦ °®´ÂÁö È®ÀÎ
+	// ê°™ì€ ë¶€ëª¨ë¥¼ ê°–ëŠ”ì§€ í™•ì¸
 	public boolean isSameParent(int x, int y) {
 		int a = find(x);
 		int b = find(y);
@@ -40,8 +40,8 @@ public class ex3 {
 	
 	public boolean solution(int[] serialization) {
 		boolean answer = true;
-		boolean flag = true; // ¹æÇâ
-		int nodeCount = 1; // -1°³¼ö ÆÄ¾Ç
+		boolean flag = true; // ë°©í–¥
+		int nodeCount = 1; // -1ê°œìˆ˜ íŒŒì•…
 		for(int i = 0; i < serialization.length;i++) {
 			if(serialization[i] != -1) {
 				nodeCount++;

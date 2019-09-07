@@ -1,0 +1,35 @@
+package etc.sketchbook.hash;
+
+import java.util.HashMap;
+
+import javax.naming.CommunicationException;
+
+public class ex3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ex3 ex = new ex3();
+		String[][] clothes = {{"yellow_hat", "headgear"},{"blue_sunglasses", "eyewear"}, 
+				{"green_turban", "headgear"}};
+		System.out.println(ex.solution(clothes));
+	}
+    public int solution(String[][] clothes) {
+        int answer = 0;
+        String kind = "";
+        for(int i =0; i < clothes.length; i++) {
+        	kind = clothes[i][1];
+        	answer++;
+        	for(int j = 0; j < clothes.length && i != j; j++) {
+        		if (kind.equals(clothes[j][1])) {
+        			continue;
+        		}
+        		
+        	}
+        }
+        
+        
+        return answer;
+    }
+    
+
+}

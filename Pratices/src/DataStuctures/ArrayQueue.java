@@ -5,8 +5,8 @@ package DataStuctures;
  *
  * 1. empty(), full()
  * 2. insert(), remove()
- * 3. peek() (¸Ç¾Õ µ¥ÀÌÅÍ Á¶È¸)
- * 4. toString() (Å¥ ¸®½ºÆ® ³»¿ë È®ÀÎ)
+ * 3. peek() (ë§¨ì• ë°ì´í„° ì¡°íšŒ)
+ * 4. toString() (í ë¦¬ìŠ¤íŠ¸ ë‚´ìš© í™•ì¸)
  */
 public class ArrayQueue {
 	private int front;
@@ -61,7 +61,7 @@ public class ArrayQueue {
 	
 	public void insert(int data) {
 		if(full()) {
-			System.out.println("°¡µæÃ¡½À´Ï´Ù.");
+			System.out.println("ê°€ë“ì°¼ìŠµë‹ˆë‹¤.");
 			maxSize += 10;
 			int[] temp = new int[maxSize];
 	
@@ -76,7 +76,7 @@ public class ArrayQueue {
 	
 	public void remove() {
 		if(empty()) {
-			System.out.println("ºñ¾î ÀÖ½À´Ï´Ù.");
+			System.out.println("ë¹„ì–´ ìˆìŠµë‹ˆë‹¤.");
 		}else {
 			arrayQueue[front] = 0;
 			front++;

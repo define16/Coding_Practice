@@ -71,7 +71,7 @@ public class ex2 {
         	map.put(temp_cityName,index);
     	}
     	
-    	// 10º¸´Ù ÀÛÀº ºóµµ¼ö¸¦ °®´Â µµ½Ã ÀÌ¸§ Ã£±â
+    	// 10ë³´ë‹¤ ì‘ì€ ë¹ˆë„ìˆ˜ë¥¼ ê°–ëŠ” ë„ì‹œ ì´ë¦„ ì°¾ê¸°
     	ArrayList small_name = new ArrayList<String>();
     	Iterator it = map.entrySet().iterator();
     	while(it.hasNext()) {

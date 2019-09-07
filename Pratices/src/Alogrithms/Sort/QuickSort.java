@@ -8,14 +8,14 @@ public class QuickSort {
 		int pivot = array[(left + right)/2];
 
 		do {
-			// ¿ÞÂÊºÎÅÍ ½ÃÀÛ, pivotº¸´Ù Å« °ªÀÇ ÀÎµ¦½º Ã£±â
+			// ì™¼ìª½ë¶€í„° ì‹œìž‘, pivotë³´ë‹¤ í° ê°’ì˜ ì¸ë±ìŠ¤ ì°¾ê¸°
 			while(array[left_temp] < pivot)
 				left_temp++;
-			// ¿À¸¥ÂÊºÎÅÍ ½ÃÀÛ, pivotº¸´Ù ÀÛÀº °ªÀÇ ÀÎµ¦½º Ã£±â
+			// ì˜¤ë¥¸ìª½ë¶€í„° ì‹œìž‘, pivotë³´ë‹¤ ìž‘ì€ ê°’ì˜ ì¸ë±ìŠ¤ ì°¾ê¸°
 			while(array[right_temp] > pivot)
 				right_temp--;
 
-			// ¸¸¾à pivotº¸´Ù Å« °ªÀÌ pivot±âÁØÀ¸·Î ¿ÞÂÊ, pivotº¸´Ù ÀÛÀº °ªÀÌ pivot±âÁØÀ¸·Î ¿À¸¥ÂÊ¿¡ ÀÖ´Ù¸é ÀÚ¸®¸¦ ¹Ù²ãÁÖ±â
+			// ë§Œì•½ pivotë³´ë‹¤ í° ê°’ì´ pivotê¸°ì¤€ìœ¼ë¡œ ì™¼ìª½, pivotë³´ë‹¤ ìž‘ì€ ê°’ì´ pivotê¸°ì¤€ìœ¼ë¡œ ì˜¤ë¥¸ìª½ì— ìžˆë‹¤ë©´ ìžë¦¬ë¥¼ ë°”ê¿”ì£¼ê¸°
 			if(left_temp <= right_temp) {
 				if(array[left_temp] != array[right_temp]) {
 					array[left_temp] = array[left_temp]^array[right_temp];
@@ -26,10 +26,10 @@ public class QuickSort {
 				right_temp--;
 			}
 		}while(left_temp <= right_temp);
-		// left_temp¿Í right_temp°¡ °°´Ù´Â ÀÇ¹Ì´Â pivotÀ§Ä¡¶ó´Â ÀÇ¹Ì
-		// pivotÀ§Ä¡¿¡ µµ´Þ½Ã Á¾·á
+		// left_tempì™€ right_tempê°€ ê°™ë‹¤ëŠ” ì˜ë¯¸ëŠ” pivotìœ„ì¹˜ë¼ëŠ” ì˜ë¯¸
+		// pivotìœ„ì¹˜ì— ë„ë‹¬ì‹œ ì¢…ë£Œ
 
-		// left_temp¿Í right_temp°¡ ¹è¿­ÀÇ ³¡¿¡ µµ´ÞÇÏÁö ¸øÇÒ °æ¿ì Àç±ÍÇÔ¼ö·Î Àç Å½»ö
+		// left_tempì™€ right_tempê°€ ë°°ì—´ì˜ ëì— ë„ë‹¬í•˜ì§€ ëª»í•  ê²½ìš° ìž¬ê·€í•¨ìˆ˜ë¡œ ìž¬ íƒìƒ‰
 		if(left < right_temp)
 			array = sort(array, left, right_temp);
 		if(right > left_temp)

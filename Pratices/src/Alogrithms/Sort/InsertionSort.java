@@ -31,7 +31,7 @@ public class InsertionSort {
 		
 		input = insertionSort.sort(input);
 		
-		System.out.println("-----Á¤´ä-----");
+		System.out.println("-----ì •ë‹µ-----");
 		for(int i = 0; i <input.length; i++) {
 			System.out.print(input[i] + " ");
 		}

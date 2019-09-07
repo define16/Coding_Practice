@@ -13,9 +13,9 @@ public class BinaryTree {
 		if (root == null) {
 			Node node = new Node();
 			node.setData(value);
-			root = node; // root¿¡ °ªÀÌ ¾øÀ¸¸é, root¿¡ °ªÀ» ³Ö´Â´Ù.
+			root = node; // rootì— ê°’ì´ ì—†ìœ¼ë©´, rootì— ê°’ì„ ë„£ëŠ”ë‹¤.
 		} else {
-          // root°¡ Á¸ÀçÇÒ °æ¿ì, root º¯°æÇÏ±â À§ÇÑ ¸Þ¼Òµå È£Ãâ
+          // rootê°€ ì¡´ìž¬í•  ê²½ìš°, root ë³€ê²½í•˜ê¸° ìœ„í•œ ë©”ì†Œë“œ í˜¸ì¶œ
 			addNode(value, root); 
 		}
 	}

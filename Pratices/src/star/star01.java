@@ -1,7 +1,7 @@
 package star;
 
 /**
-- Ãâ·Â ÇüÅÂ
+- ì¶œë ¥ í˜•íƒœ
 **********
  ********
   ******
@@ -15,7 +15,7 @@ public class star01 {
 		// TODO Auto-generated method stub
 		
 		for(int i = 0; i < 5; i++) {
-			// °ø¹é ºÎºĞ
+			// ê³µë°± ë¶€ë¶„
 			for(int j = 0; j < i; j++) {
 				System.out.print(" ");
 			}

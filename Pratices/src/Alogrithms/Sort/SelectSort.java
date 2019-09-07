@@ -5,7 +5,7 @@ import java.util.HashMap;
 public class SelectSort {
 
 	public void swap(int a, int b) {
-		//ºñÆ®¿¬»êÀÚXOR·Î swap ÇÏ±â. ´Ü a¿Í b°¡ °°À»¶§´Â 0ÀÌ ³ª¿Â´Ù. ^¿¬»êÀÇ Æ¯Â¡
+		//ë¹„íŠ¸ì—°ì‚°ìXORë¡œ swap í•˜ê¸°. ë‹¨ aì™€ bê°€ ê°™ì„ë•ŒëŠ” 0ì´ ë‚˜ì˜¨ë‹¤. ^ì—°ì‚°ì˜ íŠ¹ì§•
 		if(a != b) {
 			a = a^b;
 			b = a^b;
@@ -16,7 +16,7 @@ public class SelectSort {
 	public int[] sort(int[] input) {
 		int min;
 		for(int i = 0; i<input.length-1;i++) {
-			min = i; // ¼±ÅÃµÈ index
+			min = i; // ì„ íƒëœ index
 			for(int j = i+1; j < input.length; j++) {
 				if(input[min] > input[j]) {
 					min = j;
@@ -42,7 +42,7 @@ public class SelectSort {
 		HashMap<Integer, String> map = new HashMap<Integer, String>();
 		SelectSort selectSort = new SelectSort();
 		
-		input = selectSort.sort(input); // ¼±ÅÃÁ¤·Ä
+		input = selectSort.sort(input); // ì„ íƒì •ë ¬
 		
 		for(int i = 0; i<input.length;i++) {
 			System.out.print(input[i] + " ");

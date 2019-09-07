@@ -1,0 +1,43 @@
+
+public class ex1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ex1 ex = new ex1();
+		int data[] = {0,1,1,0,0};
+		int answer =ex.solution(data);
+		System.out.println(answer);
+	}
+
+	  public int solution(int[] fence) {
+	      int answer = 0;
+	      int count[] = {0,0};
+	      // 첫번째 울타리가 흰색
+	      for(int i=0;i<2; i++) {
+		      if(fence[0] == 0) {
+		    	  for(int i = 1; i < fence.length; i++) {
+	
+		    		  if(fence[i-1] == fence[i]) {
+		    			  
+		    		  }
+		    		  
+		    	  }
+		    	  
+		      }
+		      // 첫번째 울타리가 검은색
+		      else {
+	    		  if(fence[0] != 0) {
+	    			  count[0]++;
+	    			  fence[0] = 1;
+	    		  }
+		    	  
+		    	  
+		      }
+	     
+	      }
+
+	      
+	      return answer;
+	  }
+	  
+}

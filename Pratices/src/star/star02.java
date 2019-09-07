@@ -1,6 +1,6 @@
 package star;
 /**
-- Ãâ·Â ÇüÅÂ
+- ì¶œë ¥ í˜•íƒœ
     **
    ****
   ******
@@ -17,23 +17,23 @@ public class star02 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		for(int i = 0; i < 9; i++) {
-			// Ã¹¹øÂ° »ï°¢Çü
+			// ì²«ë²ˆì§¸ ì‚¼ê°í˜•
 			if(i < 5) {
-				//°ø¹éºÎºÐ
+				//ê³µë°±ë¶€ë¶„
 				for(int j = 4-i; j > 0; j--) {
 					System.out.print(" ");
 				}
-				// *ºÎºÐ
+				// *ë¶€ë¶„
 				for (int j = 0; j < (i+1)*2;j++) {
 					System.out.print("*");
 				}
-			// µÎ¹øÂ° ¿ª»ï°¢Çü
+			// ë‘ë²ˆì§¸ ì—­ì‚¼ê°í˜•
 			}else {
-				//°ø¹éºÎºÐ
+				//ê³µë°±ë¶€ë¶„
 				for(int j = 0; j < (i-4);j++) {
 					System.out.print(" ");
 				}
-				// *ºÎºÐ
+				// *ë¶€ë¶„
 				for(int j = (10-(i-4)*2); j > 0;j--) {
 					System.out.print("*");
 				}

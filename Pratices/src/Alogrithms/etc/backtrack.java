@@ -13,7 +13,7 @@ public class backtrack {
 		
 		return ret;
 	}
-	// ¸ğµç°æ¿ìÀÇ ¼ö Å½»ö
+	// ëª¨ë“ ê²½ìš°ì˜ ìˆ˜ íƒìƒ‰
 	public void backtracking(int[] nums, List<List<Integer>> ret, List<Integer> tmp) {
 		//base case
 		if(tmp.size() == nums.length) {
@@ -29,17 +29,17 @@ public class backtrack {
 		for(int num:nums) {
 			if(tmp.contains(num)) {
 				System.out.println("backtracking recursion log4 : " + num);
-				continue; // tmp¾È¿¡ °°Àº °ªÀÌ ÀÖÀ»¶§(Áßº¹ ¹æÁö)
+				continue; // tmpì•ˆì— ê°™ì€ ê°’ì´ ìˆì„ë•Œ(ì¤‘ë³µ ë°©ì§€)
 			}
 			System.out.println("backtracking recursion log1 : " + num);
-			tmp.add(num); // »óÅÂ°ª »ğÀÔ
+			tmp.add(num); // ìƒíƒœê°’ ì‚½ì…
 			backtracking(nums, ret, tmp);
 			System.out.print("backtracking recursion log2 : " );
 			for(int i:tmp) {
 				System.out.print(i + " ");
 			}
 			System.out.println();
-			tmp.remove(tmp.size()-1); // °ªÀ» »èÁ¦(¸Ç µÚÀÇ °ª)
+			tmp.remove(tmp.size()-1); // ê°’ì„ ì‚­ì œ(ë§¨ ë’¤ì˜ ê°’)
 			System.out.print("backtracking recursion log3 : " );
 			for(int i:tmp) {
 				System.out.print(i + " ");

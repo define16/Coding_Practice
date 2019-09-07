@@ -1,46 +1,66 @@
 package PermutationAndCombination;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Combination {
 
+	private static ArrayList<String> list = new ArrayList<String>();
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
         Combination ex = new Combination();
-        int[] arr = { 1, 2, 3 };
-        int n = arr.length;
-        int r = 2;
-        int[] combArr = new int[n];
+        int[] arr = { 1, 2, 3, 4, 6,7,10 }; // ì§‘í•©
+        int n = arr.length; // arrì˜ í¬ê¸°
+        int r = 2; // ë¶€ë¶„ì§‘í•©ì˜ í¬ê¸°
+        int[] combArr = new int[n]; // ì¡°í•©ìœ¼ë¡œ ë½‘ê³  
  
         ex.doCombination(combArr, n, r, 0, 0, arr);
+        System.out.println("===" + " í¬ê¸°(ì´ìƒê³„ìˆ˜) : " + list.size() + " ===");
+        for(String s : list) {
+        	System.out.println(s);
+        }
     }
  
+	/**
+	 * 
+	 * @param combArr ë¶€ë¶„ ì§‘í•©ìœ¼ë¡œ ë½‘ì€ ì›ì†Œì˜ index
+	 * @param n arrì˜ í¬ê¸°
+	 * @param r ë¶€ë¶„ ì§‘í•©ì˜ í¬ê¸°
+	 * @param index arrì˜ í¬ê¸°ë§Œí¼ ë°˜ë³µ
+	 * @param target ë½‘ì€ arrì˜ ì›ì†Œì˜ index
+	 * @param arr ì§‘í•©
+	 * 
+	 * ì¡°í•©ì„ ë½‘ì„ ë•Œ ì¤‘ë³µì´ ì—†ëŠ” ê²½ìš°
+	 */
     public void doCombination(int[] combArr, int n, int r, int index, int target, int[] arr){
         System.out.println("=> "+n+" "+r+" "+index+" "+target);
-         
-        // r ==0 ÀÌ¶õ °ÍÀº »ÌÀ» ¿ø¼Ò¸¦ ´Ù »Ì¾Ò´Ù´Â ¶æ.
+        // r ==0 ì´ë€ ê²ƒì€ ë½‘ì„ ì›ì†Œë¥¼ ë‹¤ ë½‘ì•˜ë‹¤ëŠ” ëœ».
         if(r == 0){
             System.out.println(Arrays.toString(combArr));
-            for(int i=0; i<index; i++)
+            String tmp = "";
+            for(int i=0; i<index; i++) {
             	System.out.print(arr[combArr[i]] + " ");
-           
+            	tmp += String.valueOf(arr[combArr[i]]);
+            	if(i != index - 1) {
+            		tmp += ",";
+            	}          	
+            }
+            list.add(tmp);
             System.out.println();
          
-        //³¡±îÁö ´Ù °Ë»çÇÑ °æ¿ì..1°³¸¦ »ÌÀº »óÅÂ¿©µµ ½ÇÆĞÇÑ °æ¿ìÀÓ ¹«Á¶°Ç return À¸·Î Á¾·á
+        //ëê¹Œì§€ ë‹¤ ê²€ì‚¬í•œ ê²½ìš°..1ê°œë¥¼ ë½‘ì€ ìƒíƒœì—¬ë„ ì‹¤íŒ¨í•œ ê²½ìš°ì„ ë¬´ì¡°ê±´ return ìœ¼ë¡œ ì¢…ë£Œ
         }else if(target == n){ 
-             
             return;
-         
         }else{
-            combArr[index] = target;
-            // (i) »Ì´Â °æ¿ì 
-            // »ÌÀ¸´Ï±î, r-1
-            // »Ì¾ÒÀ¸´Ï ´ÙÀ½ index + 1 ÇØÁà¾ß ÇÔ
+            combArr[index] = target; // ë½‘ì€ ì›ì†Œì˜ indexë¥¼ ì €ì¥
+            // (i) ë½‘ëŠ” ê²½ìš° 
+            // ë½‘ìœ¼ë‹ˆê¹Œ, r-1
+            // ë½‘ì•˜ìœ¼ë‹ˆ ë‹¤ìŒ index + 1 í•´ì¤˜ì•¼ í•¨
             doCombination(combArr, n, r-1, index+1, target+1, arr);
              
-            //(ii) ¾È »Ì´Â°æ¿ì
-            // ¾È»ÌÀ¸´Ï±î ±×´ë·Î r
-            // ¾È»Ì¾ÒÀ¸´Ï, index´Â ±×´ë·Î!
+            //(ii) ì•ˆ ë½‘ëŠ”ê²½ìš°
+            // ì•ˆë½‘ìœ¼ë‹ˆê¹Œ ê·¸ëŒ€ë¡œ r
+            // ì•ˆë½‘ì•˜ìœ¼ë‹ˆ, indexëŠ” ê·¸ëŒ€ë¡œ!
             doCombination(combArr, n, r, index, target+1, arr); 
         }
 	}

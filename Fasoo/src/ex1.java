@@ -8,14 +8,14 @@ public class ex1 {
 		int answer =ex.solution(data);
 		System.out.println(answer);
 	}
-// 0Àº Èò»ö, 1Àº °ËÀº»ö
+// 0ì€ í°ìƒ‰, 1ì€ ê²€ì€ìƒ‰
 	  public int solution(int[] fence) {
 	      int answer = 0;
 	      int count[] = {0,0};
 
-	      // Ã¹¹øÂ° ¿ïÅ¸¸®°¡ Èò»ö
+	      // ì²«ë²ˆì§¸ ìš¸íƒ€ë¦¬ê°€ í°ìƒ‰
 	      for(int i=0;i<2; i++) {
-		    int []flag = new int[fence.length]; //Ä¥ÇÏ¸é 1 Ä¥ÇÏÁö ¾ÊÀ¸¸é 0
+		    int []flag = new int[fence.length]; //ì¹ í•˜ë©´ 1 ì¹ í•˜ì§€ ì•Šìœ¼ë©´ 0
     		if(fence[0] != i) {
     			count[i]++;
     			flag[0] = 1;
@@ -24,7 +24,7 @@ public class ex1 {
     		for(int j = 1; j < fence.length; j++) {
     			int temp = fence[j-1];
     			
-    			// »õ·Î Ä¥ÇßÀ»¶§
+    			// ìƒˆë¡œ ì¹ í–ˆì„ë•Œ
     			if(flag[j-1] == 1 && fence[j-1] == 0) {
     				temp += 1;
 			    	if(temp == fence[j]) {
@@ -39,7 +39,7 @@ public class ex1 {
 			    		count[i]++;
 			    	}
     			}
-    			// Ä¥À» ÇÏÁö ¾ÊÀ»¶§
+    			// ì¹ ì„ í•˜ì§€ ì•Šì„ë•Œ
     			else {
 			    	if(temp == fence[j]) {
 			    		flag[j] = 1;

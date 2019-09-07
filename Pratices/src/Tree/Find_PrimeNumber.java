@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Find_PrimeNumber {
-	  static Set<Integer> set = new HashSet<>(); // Áßº¹¿ø¼Ò Á¦°Å
+	  static Set<Integer> set = new HashSet<>(); // ì¤‘ë³µì›ì†Œ ì œê±°
 	  
 	    public int solution(String numbers) {
 	        int answer = 0;

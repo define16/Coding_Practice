@@ -3,7 +3,7 @@ package SamsungSWPratices.Chapter01;
 public class BinaryTreeSearch {
 	static boolean isFind;
 
-	// ÀüÀ§½Ä ¼øÈ¸
+	// ì „ìœ„ì‹ ìˆœíšŒ
 	public void preOrder(Node root) {
 		if (root == null)
 			return;
@@ -12,7 +12,7 @@ public class BinaryTreeSearch {
 	    preOrder(root.getRight());
 
 	}
-	// ÁßÀ§½Ä ¼øÈ¸
+	// ì¤‘ìœ„ì‹ ìˆœíšŒ
 	public void inOrder(Node root) {
 		if (root == null)
 			return;
@@ -21,7 +21,7 @@ public class BinaryTreeSearch {
 	    inOrder(root.getRight());
 	}
 
-	// ÈÄÀ§½Ä ¼øÈ¸
+	// í›„ìœ„ì‹ ìˆœíšŒ
 	public void postOrder(Node root) {
 		if (root == null)
 			return;
@@ -31,7 +31,7 @@ public class BinaryTreeSearch {
 
 	}
 	
-	// Ã£´Â ¿ø¼ÒÀÇ ÀÎµ¦½º¸¦ ¹İÈ¯ÇÏ´Â ÇÔ¼ö
+	// ì°¾ëŠ” ì›ì†Œì˜ ì¸ë±ìŠ¤ë¥¼ ë°˜í™˜í•˜ëŠ” í•¨ìˆ˜
 	public int search(Node node, int findNum , int idx) {
 		if (node == null)
 			return idx;

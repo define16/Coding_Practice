@@ -72,7 +72,7 @@ public class LinkedListStack {
 	}
 	
 	public void pop() {
-		Node temp = node(size-2); // 2Ä­ ¾ÕÀ¸·Î
+		Node temp = node(size-2); // 2ì¹¸ ì•žìœ¼ë¡œ
 		tail = temp;
 		tail.setLink(null); 
 		size--;		

@@ -13,7 +13,7 @@ public class ex2 {
 
         int result = ex.solution(no, works);
         
-        System.out.println("´ä : " + result);
+        System.out.println("ë‹µ : " + result);
 	}
 
     public int solution(int no, int[] works) {
@@ -21,13 +21,13 @@ public class ex2 {
         Arrays.sort(works);
 
         for(int j = works.length-1; j > -1; j-- ) {
-            System.out.println("Àü : "  + works[j]);
+            System.out.println("ì „ : "  + works[j]);
             if(works[j] == 0) {
             	continue;
             }
         	works[j] = works[j] - 1;
         	no--;
-        	System.out.println("ÈÄ : "  +works[j]);
+        	System.out.println("í›„ : "  +works[j]);
         	System.out.println(no);
         	if(no == 0) {
         		break;

@@ -1,0 +1,22 @@
+package SCPC_2018;
+
+import java.util.Random;
+
+public class RandomEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		  int a;
+	        Random r = new Random(); //객체생성
+	        a = r.nextInt(1000000000)+1;       
+	        /*nextInt(9) = 0~9까지 10개의 숫자중 랜덤으로 하나를 뽑아 
+	         변수 a에 넣는다는 의미로 1~10의 숫자에서 하나를 뽑기위해 추출된 값에서 +1을 해준다*/
+	        
+	        System.out.print(a+" "); //a에 저장된 값을 화면에 출력
+
+
+		
+
+	}
+
+}

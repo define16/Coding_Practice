@@ -3,9 +3,9 @@ package Tree;
 /**
  * @author define16
  * 
- * ¼­·Î¼Ò ÁıÇÕ
- *	Union(x,y)¸¦ ÇÏ¸é x¿¡ ÀÚ½ÄÀ¸·Î y°¡ »ğÀÔ
- *	Find(x)¸¦ ÇÏ¸é x¸¦ Æ÷ÇÔÇÑ Æ®¸®ÀÇ ·çÆ® ¹øÈ£¸¦ µ¹·ÁÁÖ´Â ±¸Á¶
+ * ì„œë¡œì†Œ ì§‘í•©
+ *	Union(x,y)ë¥¼ í•˜ë©´ xì— ìì‹ìœ¼ë¡œ yê°€ ì‚½ì…
+ *	Find(x)ë¥¼ í•˜ë©´ xë¥¼ í¬í•¨í•œ íŠ¸ë¦¬ì˜ ë£¨íŠ¸ ë²ˆí˜¸ë¥¼ ëŒë ¤ì£¼ëŠ” êµ¬ì¡°
  *
  */
 public class UnionFind {
@@ -28,8 +28,8 @@ public class UnionFind {
 		int b = find(y);
 		
 		if (a != b) { 
-			parent[b] = a;	// y°¡ xº¸´Ù Å©¸é
-			// ´õ ÀÛÀº °ªÀ¸·Î ³Ö¾î ÁÙ ¶§ ´ÙÀ½°ú °°ÀÌµµ Ç¥Çö°¡´É
+			parent[b] = a;	// yê°€ xë³´ë‹¤ í¬ë©´
+			// ë” ì‘ì€ ê°’ìœ¼ë¡œ ë„£ì–´ ì¤„ ë•Œ ë‹¤ìŒê³¼ ê°™ì´ë„ í‘œí˜„ê°€ëŠ¥
 //			if(x < y)
 //				parent[b] = a;
 //			else
@@ -40,7 +40,7 @@ public class UnionFind {
 		
 	}
 	
-	// °°Àº ºÎ¸ğ¸¦ °®´ÂÁö È®ÀÎ
+	// ê°™ì€ ë¶€ëª¨ë¥¼ ê°–ëŠ”ì§€ í™•ì¸
 	public boolean isSameParent(int x, int y) {
 		int a = find(x);
 		int b = find(y);
@@ -66,8 +66,8 @@ public class UnionFind {
 		unionfind.union(2, 4);
 		unionfind.union(7, 8);
 		
-		System.out.println("1°ú 4´Â ¿¬°á µÇ¾îÀÖ³ª¿ä? " + unionfind.isSameParent(1, 4));
-		System.out.println("1°ú 8´Â ¿¬°á µÇ¾îÀÖ³ª¿ä? " + unionfind.isSameParent(1, 8));
+		System.out.println("1ê³¼ 4ëŠ” ì—°ê²° ë˜ì–´ìˆë‚˜ìš”? " + unionfind.isSameParent(1, 4));
+		System.out.println("1ê³¼ 8ëŠ” ì—°ê²° ë˜ì–´ìˆë‚˜ìš”? " + unionfind.isSameParent(1, 8));
 		
 	}
 

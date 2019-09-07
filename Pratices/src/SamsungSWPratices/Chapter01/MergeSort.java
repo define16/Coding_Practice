@@ -11,9 +11,9 @@ public class MergeSort {
 		return tempArray;
 	}
 	
-	// ºÐÇÒ ÇÔ¼ö
+	// ë¶„í•  í•¨ìˆ˜
 	public int[] merge_division(int[] array, int left, int right) {
-		int middle; // Áß°£
+		int middle; // ì¤‘ê°„
 
 		if (left < right) {
 			middle = (left + right) / 2;
@@ -25,15 +25,15 @@ public class MergeSort {
 		return array;
 	}
 
-	// º´ÇÕ ÇÔ¼ö
+	// ë³‘í•© í•¨ìˆ˜
 	public int[] merge(int[] array, int left, int middle ,int right) {
 		int left_, middle_, idx;
 
 		left_ = left;
 		middle_ = middle+1;
-		idx = left; // tempArrayÀÇ ÀÎµ¦½º
+		idx = left; // tempArrayì˜ ì¸ë±ìŠ¤
 
-		// leftºÎÅÍ middle±îÁöÀÇ ºí·Ï°ú middle+1ºÎÅÍ right±îÁöÀÇ ºí·ÏÀ» ¼­·Îºñ±³ÇÏ´Â ºÎºÐ
+		// leftë¶€í„° middleê¹Œì§€ì˜ ë¸”ë¡ê³¼ middle+1ë¶€í„° rightê¹Œì§€ì˜ ë¸”ë¡ì„ ì„œë¡œë¹„êµí•˜ëŠ” ë¶€ë¶„
 		while(left_ <= middle && middle_ <= right) {
 			if(array[left_] <= array[middle_]) {
 				tempArray[idx] = array[left_];
@@ -45,8 +45,8 @@ public class MergeSort {
 			idx++;
 		}
 		
-		// left ºí·ÏÀÇ °ªÀº ´Ù Ã³¸®µÇ¾ú´Âµ¥ right ºí·ÏÀÇ index°¡ ¾ÆÁ÷ ³²¾ÆÀÖÀ» °æ¿ì
-		// right index¸¦ ¼øÂ÷ÀûÀ¸·Î °á°ú result¿¡ º¹»ç
+		// left ë¸”ë¡ì˜ ê°’ì€ ë‹¤ ì²˜ë¦¬ë˜ì—ˆëŠ”ë° right ë¸”ë¡ì˜ indexê°€ ì•„ì§ ë‚¨ì•„ìžˆì„ ê²½ìš°
+		// right indexë¥¼ ìˆœì°¨ì ìœ¼ë¡œ ê²°ê³¼ resultì— ë³µì‚¬
 		if(left_ > middle) {
 			for(int i = middle_; i <= right; i++) {
 				tempArray[idx] = array[i];
@@ -65,7 +65,7 @@ public class MergeSort {
 		return array;
 	}
 
-	//ÇÑ±ÛÅ×½ºÆ®
+	//í•œê¸€í…ŒìŠ¤íŠ¸
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int num = 16;

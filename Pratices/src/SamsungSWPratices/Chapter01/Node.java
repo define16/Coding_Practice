@@ -13,7 +13,7 @@ public class Node {
     	this.data = data;
     }
     
-    // ¿ÞÂÊ °ª
+    // ì™¼ìª½ ê°’
     public Node getLeft() {
     	return left;
     }
@@ -21,7 +21,7 @@ public class Node {
     	this.left = left;
     }
     
-    // ¿À¸¥ÂÊ °ª
+    // ì˜¤ë¥¸ìª½ ê°’
     public Node getRight() {
     	return right;
     }

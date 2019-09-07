@@ -6,8 +6,8 @@ package DataStuctures;
  *
  * 1. empty(), full()
  * 2. insert(), remove()
- * 3. peek() (¸Ç¾Õ µ¥ÀÌÅÍ Á¶È¸)
- * 4. toString() (Å¥ ¸®½ºÆ® ³»¿ë È®ÀÎ)
+ * 3. peek() (ë§¨ì• ë°ì´í„° ì¡°íšŒ)
+ * 4. toString() (í ë¦¬ìŠ¤íŠ¸ ë‚´ìš© í™•ì¸)
  */
 
 public class ArrayCircularQueue {
@@ -80,7 +80,7 @@ public class ArrayCircularQueue {
 	
 	public void insert(int data) {
 		if(full()) {
-			System.out.println("°¡µæÂ÷ÀÖ´Ù.");
+			System.out.println("ê°€ë“ì°¨ìˆë‹¤.");
 			maxSize += 10;
 			int[] temp = new int[maxSize];
 			for(int i = 0; i < arrayQueue.length; i++) {
@@ -104,7 +104,7 @@ public class ArrayCircularQueue {
 	
 	public void remove() {
 		if(empty()) {
-			System.out.println("ºñ¾îÀÖ½À´Ï´Ù.");
+			System.out.println("ë¹„ì–´ìˆìŠµë‹ˆë‹¤.");
 		}
 		arrayQueue[front] = 0;
 		front++;

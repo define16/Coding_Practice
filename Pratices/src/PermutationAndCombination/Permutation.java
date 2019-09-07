@@ -5,9 +5,9 @@ import java.util.Collections;
 import java.util.HashSet;
 /**
  * 
- * ¼ø¿­ ±¸ÇÏ±â
+ * ìˆœì—´ êµ¬í•˜ê¸°
  * 
- * Àç±ÍÇÔ¼ö·Î ±¸Çö
+ * ì¬ê·€í•¨ìˆ˜ë¡œ êµ¬í˜„
  * @author define16
  *
  */
@@ -15,9 +15,9 @@ public class Permutation {
 	private static ArrayList<String> list = new ArrayList<String>();
 	
 	/**
-	 * @param data ¼ø¿­ List
-	 * @param index ¼ø¿­ ListÀÇ Å©±â
-	 * @param size ¿øÇÏ´Â Á¶ÇÕÀÇ Å©±â
+	 * @param data ìˆœì—´ List
+	 * @param index ìˆœì—´ Listì˜ í¬ê¸°
+	 * @param size ì›í•˜ëŠ” ì¡°í•©ì˜ í¬ê¸°
 	 */
 	public void perm(String[] data, int index, int size) {
 		String tmp = "";
@@ -52,14 +52,14 @@ public class Permutation {
 		
 		p.perm(data, index, size);
 		
-		HashSet<String> check = new HashSet<String>(); // Áßº¹È®ÀÎ¿ë Test
+		HashSet<String> check = new HashSet<String>(); // ì¤‘ë³µí™•ì¸ìš© Test
 		
 		for(int i=0; i<list.size(); i++) {
 			System.out.println(list.get(i));
-			check.add(list.get(i)); // Áßº¹È®ÀÎ¿ë Test
+			check.add(list.get(i)); // ì¤‘ë³µí™•ì¸ìš© Test
 		}
 	
-		System.out.println("ÃÑ °¹¼ö : " + list.size() + ", " + check.size());
+		System.out.println("ì´ ê°¯ìˆ˜ : " + list.size() + ", " + check.size());
 	}
 
 }

@@ -1,0 +1,29 @@
+package SCPC_2018;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class RandomEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] ranNumber = new int[200000];
+
+		for(int i=0; i <25;i++){
+
+		ranNumber.add(i);
+
+		}
+
+		Collections.shuffle(ranNumber);
+
+		System.out.println(ranNumber);
+
+
+
+		출처: http://ralf79.tistory.com/284 [진형아빠이야기]
+
+		출처: http://ralf79.tistory.com/284 [진형아빠이야기]
+	}
+
+}
