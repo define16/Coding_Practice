@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="081ff460-9862-4c29-883f-7612e40623e9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pratices/src/AlgorithmicProblemSolvingStrategies/first/RockFestival.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pratices/bin/sketchbook/hash/ex3.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pratices/bin/sketchbook/hash/ex3.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -140,6 +137,14 @@
       <option name="presentableId" value="Default" />
       <updated>1567797479101</updated>
     </task>
+    <task id="LOCAL-00001" summary="20190919">
+      <created>1568824712594</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1568824712594</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -154,5 +159,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="20190919" />
+    <option name="LAST_COMMIT_MESSAGE" value="20190919" />
   </component>
 </project>

@@ -8,6 +8,7 @@
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="package Backjoon.grid;"/>
 			<item value="newNode"/>
 			<item value="&#x0D;&#x0A;class Node {&#x0D;&#x0A;    private int data;&#x0D;&#x0A;    private Node left;&#x0D;&#x0A;    private Node right;&#x0D;&#x0A;  &#x0D;&#x0A;    public int getData() {&#x0D;&#x0A;    &#x09;return data;&#x0D;&#x0A;    }&#x0D;&#x0A;    &#x0D;&#x0A;    public void setData(int data) {&#x0D;&#x0A;    &#x09;this.data = data;&#x0D;&#x0A;    }&#x0D;&#x0A;    &#x0D;&#x0A;    // 왼쪽 값&#x0D;&#x0A;    public Node getLeft() {&#x0D;&#x0A;    &#x09;return left;&#x0D;&#x0A;    }&#x0D;&#x0A;    public void setLeft(Node left) {&#x0D;&#x0A;    &#x09;this.left = left;&#x0D;&#x0A;    }&#x0D;&#x0A;    &#x0D;&#x0A;    // 오른쪽 값&#x0D;&#x0A;    public Node getRight() {&#x0D;&#x0A;    &#x09;return right;&#x0D;&#x0A;    }&#x0D;&#x0A;    &#x0D;&#x0A;    public void setRight(Node right) {&#x0D;&#x0A;    &#x09;this.right = right;&#x0D;&#x0A;    }&#x0D;&#x0A;}&#x0D;&#x0A;public class ex3 {&#x0D;&#x0A;&#x09;public boolean solution(int[] serialization) {&#x0D;&#x0A;&#x09;&#x09;boolean answer = true;&#x0D;&#x0A;&#x09;&#x09;boolean flag = true; // 방향&#x0D;&#x0A;&#x09;&#x09;int nodeCount = 1; // -1개수 파악&#x0D;&#x0A;&#x09;&#x09;for(int i = 0; i &lt; serialization.length/2;i++) {&#x0D;&#x0A;&#x09;&#x09;&#x09;&#x09;if(serialization[i] != -1 &amp;&amp; flag) {&#x0D;&#x0A;&#x09;&#x09;&#x09;&#x09;&#x09;nodeCount++;&#x0D;&#x0A;&#x09;&#x09;&#x09;&#x09;}&#x0D;&#x0A;&#x09;&#x09;&#x09;&#x09;else {&#x0D;&#x0A;&#x09;&#x09;&#x09;&#x09;&#x09;nodeCount--;&#x0D;&#x0A;&#x09;&#x09;&#x09;&#x09;&#x09;flag = false;&#x0D;&#x0A;&#x09;&#x09;&#x09;&#x09;}&#x0D;&#x0A;&#x09;&#x09;&#x09;&#x09;&#x0D;&#x0A;&#x09;&#x09;&#x09;&#x09;if(nodeCount &lt; 0) {&#x0D;&#x0A;&#x09;&#x09;&#x09;&#x09;&#x09;answer = false;&#x0D;&#x0A;&#x09;&#x09;&#x09;&#x09;&#x09;break;&#x0D;&#x0A;&#x09;&#x09;&#x09;&#x09;}&#x0D;&#x0A;&#x09;&#x09;&#x09;&#x0D;&#x0A;&#x09;&#x09;}&#x0D;&#x0A;&#x09;&#x09;if (answer) {&#x0D;&#x0A;&#x09;&#x09;&#x09;for(int i = serialization.length/2+1; i &lt; serialization.length;i++) {&#x0D;&#x0A;&#x09;&#x09;&#x09;&#x09;&#x0D;&#x0A;&#x09;&#x09;&#x09;}&#x0D;&#x0A;&#x09;&#x09;}&#x0D;&#x0A;        &#x0D;&#x0A;        &#x0D;&#x0A;&#x09;&#x09;return answer;&#x0D;&#x0A;&#x09;}&#x0D;&#x0A;&#x0D;&#x0A;&#x09;public static void main(String[] args) {&#x0D;&#x0A;&#x09;&#x09;// TODO Auto-generated method stub&#x0D;&#x0A;&#x0D;&#x0A;&#x09;&#x09;ex3 ex = new ex3();&#x0D;&#x0A;&#x09;&#x09;int data[] = {3, 5, 6, 8, -1, -1, -1, 1, 7, -1, -1, -1, 4, -1, 2, -1, -1};&#x0D;&#x0A;&#x0D;&#x0A;&#x09;&#x09;boolean answer =ex.solution(data);&#x0D;&#x0A;&#x09;&#x09;System.out.println(answer);&#x0D;&#x0A;&#x09;}&#x0D;&#x0A;&#x0D;&#x0A;}&#x0D;&#x0A;"/>
 			<item value="input"/>
@@ -17,9 +18,9 @@
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item value="310" key="DIALOG_WIDTH"/>
-		<item value="1|맑은 고딕|10.5|0|WINDOWS|1|-14|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕" key="DIALOG_FONT_NAME"/>
-		<item value="434" key="DIALOG_HEIGHT"/>
+		<item value="288" key="DIALOG_WIDTH"/>
+		<item value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕" key="DIALOG_FONT_NAME"/>
+		<item value="391" key="DIALOG_HEIGHT"/>
 		<item value="343" key="DIALOG_X_ORIGIN"/>
 		<item value="263" key="DIALOG_Y_ORIGIN"/>
 	</section>
