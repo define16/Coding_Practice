@@ -2,7 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="081ff460-9862-4c29-883f-7612e40623e9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.log" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/Fasoo/.markers" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/Fasoo/.markers" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/Kakao/.markers" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/Kakao/.markers" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/OnCoder/.markers" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/OnCoder/.markers" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/Pratices/.markers" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/Pratices/.markers" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/ZumInternet/.markers" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/ZumInternet/.markers" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/etc/.markers" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/etc/.markers" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/linux/.markers" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/linux/.markers" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.browser.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.browser.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.egit.ui/dialog_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.egit.ui/dialog_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/1316846700.index" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/1316846700.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/externalFilesCache" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/externalFilesCache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.ui/QualifiedTypeNameHistory.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.ui/QualifiedTypeNameHistory.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.pde.core/.cache/clean-cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.pde.core/.cache/clean-cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pratices/bin/AlgorithmicProblemSolvingStrategies/first/RockFestival.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pratices/bin/AlgorithmicProblemSolvingStrategies/first/RockFestival.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pratices/bin/etc/AAA.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pratices/bin/etc/AAA.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pratices/bin/etc/BBB.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pratices/bin/etc/BBB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pratices/bin/etc/CCC.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pratices/bin/etc/CCC.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pratices/bin/etc/PrimeNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pratices/bin/etc/PrimeNumber.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pratices/bin/etc/extends_ex1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pratices/bin/etc/extends_ex1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pratices/bin/sketchbook/hash/ex1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pratices/bin/sketchbook/hash/ex1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pratices/bin/sketchbook/hash/ex2.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pratices/bin/sketchbook/hash/ex2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pratices/bin/sketchbook/hash/ex3.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pratices/bin/sketchbook/hash/ex3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pratices/bin/sketchbook/level/ex1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pratices/bin/sketchbook/level/ex1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pratices/bin/sketchbook/level/ex2.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pratices/bin/sketchbook/level/ex2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pratices/src/AlgorithmicProblemSolvingStrategies/first/RockFestival.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pratices/src/AlgorithmicProblemSolvingStrategies/first/RockFestival.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

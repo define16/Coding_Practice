@@ -5,10 +5,15 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Scanner;
 
-// Class 이름을 Main 이라 정의해야함
-// public class Main 
+/**
+ * 백준알고리즘, 5585번, 거스름돈 <br>
+ * https://www.acmicpc.net/problem/5585
+ * @author define16
+ *
+ */
 public class g_5585 {
-
+	// Class 이름을 Main 이라 정의해야함
+	// public class Main 
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 		BufferedReader bf = new BufferedReader(new InputStreamReader(System.in)); // 선언

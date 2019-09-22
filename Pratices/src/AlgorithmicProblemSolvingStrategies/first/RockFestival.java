@@ -1,6 +1,5 @@
 package AlgorithmicProblemSolvingStrategies.first;
 
-import com.sun.xml.internal.ws.util.HandlerAnnotationInfo;
 
 public class RockFestival {
     public static void main(String args[]){

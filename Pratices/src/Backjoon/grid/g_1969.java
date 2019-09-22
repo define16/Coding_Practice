@@ -7,6 +7,12 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * 백준알고리즘, 1969번, DNA <br>
+ * https://www.acmicpc.net/problem/1969
+ * @author define16
+ *
+ */
 public class g_1969 {
 	// public class Main
 	public static void main(String[] args) throws NumberFormatException, IOException {
