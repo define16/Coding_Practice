@@ -11,7 +11,7 @@ import java.util.Scanner;
  * @author define16
  *
  */
-public class g_5585 {
+public class G_5585 {
 	// Class 이름을 Main 이라 정의해야함
 	// public class Main 
 	public static void main(String[] args) throws IOException {

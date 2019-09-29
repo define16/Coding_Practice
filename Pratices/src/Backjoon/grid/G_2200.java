@@ -9,7 +9,7 @@ import java.io.InputStreamReader;
  * @author define16
  *
  */
-public class g_2200 {
+public class G_2200 {
 
 	String answer = "";
 	String prefix = "";

@@ -9,9 +9,9 @@ public class Combination {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
         Combination ex = new Combination();
-        int[] arr = { 1, 2, 3, 4, 6,7,10 }; // 집합
+        int[] arr = { 1, 2, 3, 4 }; // 집합
         int n = arr.length; // arr의 크기
-        int r = 2; // 부분집합의 크기
+        int r = 14; // 부분집합의 크기
         int[] combArr = new int[n]; // 조합으로 뽑고 
  
         ex.doCombination(combArr, n, r, 0, 0, arr);

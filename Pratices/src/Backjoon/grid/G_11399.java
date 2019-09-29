@@ -10,7 +10,7 @@ import java.util.Arrays;
  * @author define16
  *
  */
-public class g_11399 {
+public class G_11399 {
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		// TODO Auto-generated method stub

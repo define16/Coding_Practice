@@ -13,7 +13,7 @@ import java.util.Map;
  * @author define16
  *
  */
-public class g_1969 {
+public class G_1969 {
 	// public class Main
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		// TODO Auto-generated method stub

@@ -46,9 +46,9 @@ public class Permutation {
 		
 		Permutation p = new Permutation();
 
-		String data[] = {"A", "B", "C", "D", "E"};
+		String data[] = {"A", "B", "C", "D"};
 		int index = 0;
-		int size = 3;
+		int size = 4;
 		
 		p.perm(data, index, size);
 		
