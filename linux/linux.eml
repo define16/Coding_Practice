@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component jdk="adopted JDK 1.8" jdk_type="JavaSDK">
+	<exclude-output/>
+	<contentEntry url="file://$MODULE_DIR$"/>
+	<lib name="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER" scope="PROVIDED"/>
+</component>

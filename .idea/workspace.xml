@@ -2,35 +2,69 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="081ff460-9862-4c29-883f-7612e40623e9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.metadata/.log" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/Fasoo/.markers" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/Fasoo/.markers" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/Kakao/.markers" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/Kakao/.markers" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/OnCoder/.markers" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/OnCoder/.markers" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/Pratices/.markers" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/Pratices/.markers" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/ZumInternet/.markers" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/ZumInternet/.markers" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/etc/.markers" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/etc/.markers" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/linux/.markers" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/linux/.markers" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.browser.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.browser.prefs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.egit.ui/dialog_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.egit.ui/dialog_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/1316846700.index" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/1316846700.index" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/externalFilesCache" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/externalFilesCache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.ui/QualifiedTypeNameHistory.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.ui/QualifiedTypeNameHistory.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.pde.core/.cache/clean-cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.pde.core/.cache/clean-cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pratices/bin/AlgorithmicProblemSolvingStrategies/first/RockFestival.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pratices/bin/AlgorithmicProblemSolvingStrategies/first/RockFestival.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ETC/src/etc/example1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/linux/linux.eml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnCoder/OnCoder.iml" beforeDir="false" afterPath="$PROJECT_DIR$/OnCoder/OnCoder.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pratices/bin/Alogrithms/Sort/InsertionSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pratices/bin/Alogrithms/Sort/InsertionSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pratices/bin/Alogrithms/Sort/MergeSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pratices/bin/Alogrithms/Sort/MergeSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pratices/bin/Alogrithms/Sort/QuickSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pratices/bin/Alogrithms/Sort/QuickSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pratices/bin/Alogrithms/Sort/SelectSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pratices/bin/Alogrithms/Sort/SelectSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pratices/bin/Alogrithms/etc/backtrack.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pratices/bin/Alogrithms/etc/backtrack.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pratices/bin/BitOperador/shift.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pratices/bin/BitOperador/shift.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pratices/bin/DataStuctures/ArrayCircularQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pratices/bin/DataStuctures/ArrayCircularQueue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pratices/bin/DataStuctures/ArrayQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pratices/bin/DataStuctures/ArrayQueue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pratices/bin/DataStuctures/ArrayStack.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pratices/bin/DataStuctures/ArrayStack.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pratices/bin/DataStuctures/LinkedList$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pratices/bin/DataStuctures/LinkedList$Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pratices/bin/DataStuctures/LinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pratices/bin/DataStuctures/LinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pratices/bin/DataStuctures/LinkedListQueue$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pratices/bin/DataStuctures/LinkedListQueue$Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pratices/bin/DataStuctures/LinkedListQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pratices/bin/DataStuctures/LinkedListQueue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pratices/bin/DataStuctures/LinkedListStack$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pratices/bin/DataStuctures/LinkedListStack$Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pratices/bin/DataStuctures/LinkedListStack.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pratices/bin/DataStuctures/LinkedListStack.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pratices/bin/PermutationAndCombination/All.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pratices/bin/PermutationAndCombination/All.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pratices/bin/PermutationAndCombination/Combination.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pratices/bin/PermutationAndCombination/Combination.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pratices/bin/PermutationAndCombination/Permutation.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pratices/bin/PermutationAndCombination/Permutation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pratices/bin/Tree/Find_PrimeNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pratices/bin/Tree/Find_PrimeNumber.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pratices/bin/Tree/UnionFind.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pratices/bin/Tree/UnionFind.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pratices/bin/etc/AAA.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pratices/bin/etc/AAA.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pratices/bin/etc/BBB.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pratices/bin/etc/BBB.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pratices/bin/etc/CCC.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pratices/bin/etc/CCC.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pratices/bin/etc/PrimeNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pratices/bin/etc/PrimeNumber.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pratices/bin/etc/extends_ex1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pratices/bin/etc/extends_ex1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pratices/bin/sketchbook/hash/ex1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pratices/bin/sketchbook/hash/ex1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pratices/bin/sketchbook/hash/ex2.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pratices/bin/sketchbook/hash/ex2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pratices/bin/sketchbook/hash/ex3.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pratices/bin/sketchbook/hash/ex3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pratices/bin/sketchbook/level/ex1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pratices/bin/sketchbook/level/ex1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pratices/bin/sketchbook/level/ex2.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pratices/bin/sketchbook/level/ex2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pratices/src/AlgorithmicProblemSolvingStrategies/first/RockFestival.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pratices/src/AlgorithmicProblemSolvingStrategies/first/RockFestival.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pratices/bin/star/star01.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pratices/bin/star/star01.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pratices/bin/star/star02.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pratices/bin/star/star02.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RemoteSystemsTempFiles/RemoteSystemsTempFiles.iml" beforeDir="false" afterPath="$PROJECT_DIR$/RemoteSystemsTempFiles/RemoteSystemsTempFiles.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etc/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/ETC/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etc/.project" beforeDir="false" afterPath="$PROJECT_DIR$/ETC/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etc/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/ETC/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etc/bin/etc/AAA.class" beforeDir="false" afterPath="$PROJECT_DIR$/ETC/bin/etc/AAA.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etc/bin/etc/BBB.class" beforeDir="false" afterPath="$PROJECT_DIR$/ETC/bin/etc/BBB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etc/bin/etc/CCC.class" beforeDir="false" afterPath="$PROJECT_DIR$/ETC/bin/etc/CCC.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etc/bin/etc/PrimeNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/ETC/bin/etc/PrimeNumber.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etc/bin/etc/extends_ex1.class" beforeDir="false" afterPath="$PROJECT_DIR$/ETC/bin/etc/extends_ex1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etc/bin/etc/sketchbook/ex.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/etc/bin/etc/sketchbook/ex1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/etc/bin/etc/sketchbook/ex2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/etc/bin/etc/sketchbook/hash/ex1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/etc/bin/etc/sketchbook/hash/ex2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/etc/bin/etc/sketchbook/hash/ex3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/etc/etc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ETC/etc.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etc/src/etc/PrimeNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/ETC/src/etc/PrimeNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etc/src/etc/extends_ex1.java" beforeDir="false" afterPath="$PROJECT_DIR$/ETC/src/etc/extends_ex1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etc/src/etc/sketchbook/ex.java" beforeDir="false" afterPath="$PROJECT_DIR$/ETC/src/sketchbook/ex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etc/src/etc/sketchbook/ex1.java" beforeDir="false" afterPath="$PROJECT_DIR$/ETC/src/sketchbook/ex1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etc/src/etc/sketchbook/ex2.java" beforeDir="false" afterPath="$PROJECT_DIR$/ETC/src/sketchbook/ex2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etc/src/etc/sketchbook/hash/ex1.java" beforeDir="false" afterPath="$PROJECT_DIR$/ETC/src/sketchbook/hash/ex1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etc/src/etc/sketchbook/hash/ex2.java" beforeDir="false" afterPath="$PROJECT_DIR$/ETC/src/sketchbook/hash/ex2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etc/src/etc/sketchbook/hash/ex3.java" beforeDir="false" afterPath="$PROJECT_DIR$/ETC/src/sketchbook/hash/ex3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linux/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/linux/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linux/linux.iml" beforeDir="false" afterPath="$PROJECT_DIR$/linux/linux.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linux/target/classes/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/linux/target/classes/META-INF/maven/com.test/linux/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/linux/target/classes/META-INF/maven/com.test/linux/pom.xml" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,11 +86,12 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Pratices/src/etc" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Project/Listeny/Code/Java" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -76,9 +111,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.RockFestival">
-    <configuration name="RockFestival" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="AlgorithmicProblemSolvingStrategies.first.RockFestival" />
+  <component name="RunManager" selected="Application.backtrack">
+    <configuration name="backtrack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Alogrithms.etc.backtrack" />
       <module name="Pratices" />
       <extension name="coverage">
         <pattern>
@@ -144,9 +179,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.ex1" />
+      <item itemvalue="Application.ex2" />
+      <item itemvalue="Application.ex3" />
+      <item itemvalue="Application.extends_ex1" />
+      <item itemvalue="Application.backtrack" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.RockFestival" />
+        <item itemvalue="Application.backtrack" />
         <item itemvalue="Application.ex3" />
         <item itemvalue="Application.ex1" />
         <item itemvalue="Application.ex2" />
