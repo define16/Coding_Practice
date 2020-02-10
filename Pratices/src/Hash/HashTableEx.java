@@ -67,7 +67,7 @@ class HashTable {
 		
 		// 해당 index 가 비어 있는 경우
 		if(list == null) {
-			list = new LinkedList<Node>(); // 생성
+			list = new LinkedList<>(); // 생성
 			data[index] = list; // data 리스트에 추가
 		}
 		

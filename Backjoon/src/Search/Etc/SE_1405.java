@@ -6,7 +6,13 @@ import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.Map;
 
-// 
+/**
+ * 백준 알고리즘 문제
+ * 탐색 --> 1405번 미친 로봇
+ * https://www.acmicpc.net/problem/1405
+ * @author define16
+ *
+ */
 public class SE_1405 {
 	final char[] direction = { 'N', 'S', 'E', 'W' };
 //	final int[][] direction = { {0,1}, {0,-1}, {-1,0}, {1,0} };
