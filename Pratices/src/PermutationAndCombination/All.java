@@ -55,6 +55,12 @@ public class All {
     }
     //조합 (순서관심없고 뽑은 유무만 생각)
     private static void combination(int[] comArr, int n, int r, int index, int target) {
+    	// n = 10, r = 3
+        //조합 (순서관심없고 뽑은 유무만 생각)
+//        System.out.println("***조합(0,1,2)***");
+//        int[] comArr = new int[r];
+//        combination(comArr, n, r, 0, 0);
+    	
         if(r==0){
             for(int i : comArr){
                 System.out.print(i+" ");
